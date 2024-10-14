@@ -1,0 +1,88 @@
+#aboutTitle {
+    font-size: 50px;
+    padding: 0px 0 40px 0;
+    text-align: center;
+    font-family: var(--geneva-family);
+    color: var(--darkTeal);
+    text-shadow: -1px 0px 2px var(--blackO);
+}
+
+.about-column {
+    float: left;
+    width: 25%;
+    height: 230px;
+    padding: 10px;
+    font-family: var(--sans);
+    text-align: center;
+}
+.about-row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.about-row {
+    display: flex;
+    justify-content: center;
+}
+i {
+    font-size: 80px;
+    padding: 15px 0;
+}
+
+#col1 {
+    color: var(--white);
+    background-color: var(--orange);
+    padding: 20px;
+}
+
+#col2 {
+    color: var(--black);
+    background-color: var(--gray);
+    padding: 20px;
+}
+
+#col3 {
+    color: var(--white);
+    background-color: var(--teal);
+    padding: 20px;
+}
+
+#col4 {
+    color: var(--white);
+    background-color: var(--darkTeal);
+    padding: 20px;
+}
+
+#col5 {
+    color: var(--white);
+    background-color: var(--orange);
+    padding: 20px;
+}
+
+#col6 {
+    color: var(--black);
+    background-color: var(--gray);
+    padding: 20px;
+}
+@media only screen and (max-width: 900px) {
+    .about-column {
+        width: 40%;
+    } 
+    .about-row {
+        display: inline-flex;
+        justify-content: center;
+        margin: 0 auto;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .about-column {
+        float: none;
+        width: 80%;
+        margin: 0 auto;
+    }   
+    .about-row {
+        display: block;
+        justify-content: center;
+    }
+}

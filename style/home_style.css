@@ -1,0 +1,121 @@
+:root {
+    --white: #ffffff;
+    --black: #000000;
+    --blackO: rgba(0,0,0,0.25);
+    --orange: #ff735c;
+    --orange2: #f9c2ba;
+    --gray: #e1e1e1;
+    --teal: #385a64;
+    --darkTeal: #1a2e35;
+    --geneva-family: Verdana, Geneva, Tahoma, sans-serif;
+    --sans: 'Lucida Sans';
+}
+
+* {
+    background-color: var(--white);
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links {
+    background-color: var(--white);
+    padding-top: 40px;
+    color: var(--white);
+    display: flex;
+    justify-content: center;
+    padding-left: auto;
+}
+
+#home_nav, #about_nav, #products_nav, #reviews_nav, #contacts_nav {
+    padding: 4px 12px;
+    margin: 0 10px;
+    font-size: 18px;
+    font-weight: 700;
+    font-family: var(--geneva-family);
+    text-decoration: none;
+    color: var(--darkTeal);
+}
+#home_nav:hover, #about_nav:hover, #products_nav:hover, #reviews_nav:hover, #contacts_nav:hover {
+    border-radius: 12px;
+    background-color: var(--orange);
+    color: var(--white);
+}
+
+.home-section-one {
+    margin: 50px 0 50px 0;
+    background-color: var(--gray);
+    width: 35%;
+    padding: 70px 20px 70px 0px;
+    text-align: center;
+    float: left;
+    -webkit-box-shadow: -9px 8px 7px -2px var(--blackO);
+    -moz-box-shadow: -9px 8px 7px -2px var(--blackO);
+    box-shadow: -9px 8px 7px -2px var(--blackO);
+}
+
+.home {
+    padding: 40px 0 50px 0;
+    display: flex;
+    justify-content: center;
+}
+#littleE {
+    color: var(--orange);
+    background-color: var(--gray);
+}
+#headText {
+    text-shadow: -3px 0px 5px var(--blackO);
+}
+#headText, #listText, .items {
+    background-color: var(--gray);
+    font-family: var(--geneva-family);
+    color: var(--darkTeal);
+}
+#listText, .items {
+    padding-top: 4px;
+    list-style: none;
+    font-size: 14px;
+    font-family: var(--sans);
+    margin: 5px 20px;
+}
+#listText {
+    margin-top: 60px;
+}
+
+.home-section-two {
+    float: right;
+    padding: 10px 50px;
+    width: 40%;
+    height: 500px;
+    background-image: url("../assets/images/shopping2.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+
+
+@media only screen and (max-width: 730px) {
+    .home-section-one {
+        padding: 40px 2px;
+        margin: 0 auto;
+        width: 80%;
+        float: none;
+        margin-bottom: 20px;
+    }
+    .home {
+        display: block;
+        justify-content: center;
+    }
+    .home-section-two {
+        width: 80%;
+        margin: 0;
+        float: none;
+        margin: 0 auto;
+        background-position: top;
+    }
+    #home_nav, #about_nav, #products_nav, #reviews_nav, #contacts_nav {
+        padding: 4px 10px;
+        margin: 0 2px;
+        font-size: 12px;
+        font-weight: 900;
+    }
+}
