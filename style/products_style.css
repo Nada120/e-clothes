@@ -4,39 +4,81 @@
     text-align: center;
     font-family: var(--geneva-family);
     color: var(--darkTeal);
+    background-color: var(--orange2);
     text-shadow: -1px 0px 2px var(--blackO);
 }
 #products {
-    width: 90%;
-    margin: 0 auto;
+    width: 100%;
+    background-color: var(--orange2);
+    padding-bottom: 30px;
 }
 
-#picture1, #picture2, #picture3, #picture4, #picture5, #picture6 {
-    width: 30%;
-    height: 350px;
+#picture1, #picture2, #picture3 {
+    width: 300px;
+    height: 400px;
+    box-shadow: -8px 9px 19px -2px var(--blackO);
+    -webkit-box-shadow: -8px 9px 19px -2px var(--blackO);
+    -moz-box-shadow: -8px 9px 19px -2px var(--blackO);
 }
 
-#proD1, #proD2, #proD3, #proD4, #proD5, #proD6 {
-    border-radius: 12px;
+#proD1, #proD2, #proD3 {
+    border-radius: 5px;
     background-color: var(--white);
     box-shadow: -8px 9px 19px -2px var(--blackO);
     -webkit-box-shadow: -8px 9px 19px -2px var(--blackO);
     -moz-box-shadow: -8px 9px 19px -2px var(--blackO);
-    width: 65%;
-    margin-left: 50px;
+    width: 440px;
+    margin-left: 30px;
     padding: 22px 18px;
-    color: var(--white);
+    color: var(--darkTeal);
+    font-size: 18px;
 }
 
 .products-item {
     display: flex;
-    margin: 0 auto;
+    justify-content: center;
     margin-bottom: 40px;
+    background-color: var(--orange2);
 }
 
 .product-name {
     background-color: var(--white);
     color: var(--darkTeal);
-    font-size: 30px;
+    font-weight: 700;
+    font-size: 22px;
     font-family: var(--sans);
+}
+.price {
+    color: var(--orange);
+}
+#stars {
+    font-size: 18px;
+    color: var(--yellow);
+}
+
+@media only screen and (max-width: 835px) {
+    #proD1, #proD2, #proD3 {
+        width: 50%;
+    }
+    #picture1, #picture2, #picture3 {
+        width: 34%;
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    #proD1, #proD2, #proD3 {
+        width: 80%;
+        margin: 0 auto 50px auto;
+    }
+    #picture1, #picture2, #picture3 {
+        width: 250px;
+        height: 300px;
+        display: block;
+        margin: 0 auto 10px auto;
+    }
+    .products-item {
+        display: block;
+        justify-content: center;
+        margin: 0 auto;
+    }
 }
