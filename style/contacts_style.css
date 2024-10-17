@@ -1,13 +1,13 @@
 #contacts {
     background-color: var(--darkTeal);
     height: 260px;
-    padding: 50px 0px 0 60px;
+    padding: 50px 0 0 60px;
 }
 .content-contacts {
     background-color: var(--darkTeal);
     display: inline-table;
     height: 200px;
-    padding-right: 12%;
+    padding: 0 10%;
     padding: auto;
 }
 .title-contacts {
@@ -38,38 +38,28 @@
     color: var(--orange);
 }
 
-@media only screen and (max-width: 1090px) {
+@media only screen and (max-width: 1100px) {
     .content-contacts {
-        padding-right: 10%;
+        padding: 0 8%;
     }
 }
-@media only screen and (max-width: 960px) {
+@media only screen and (max-width: 770px) {
     .content-contacts {
-        padding-right: 7%;
-    }
-}
-@media only screen and (max-width: 820px) {
-    .content-contacts {
-        padding-right: 40px;
+        padding: 0 25px;
     }
 }
 
-@media only screen and (max-width: 735px) {
-    .link-cont {
-        font-size: 12px;
-    }
+@media only screen and (max-width: 640px) {
     #contact-icon {
-        font-size: 20px;
-    }
-    .title-contacts { 
         font-size: 16px;
     }
-}
-@media only screen and (max-width: 619px) {
-    #contacts {
-        padding: 50px 0 0 10px;
+    .link-cont {
+        font-size: 13px;
+    }
+    .title-contacts {
+        font-size: 17px;
     }
     .content-contacts {
-        padding-right: 20px;
+        padding: 0 12px;
     }
 }
